@@ -1,0 +1,71 @@
+.table-container {
+  width: 100%;
+  margin:auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+.table-controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.table-controls input,
+.table-controls select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.table-controls input:focus,
+.table-controls select:focus {
+  border-color: #007BFF; /* Blue border on focus */
+  outline: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #89bdf4; /* Blue header */
+  color: white; /* White text for better contrast */
+}
+
+tbody tr:hover {
+  background-color: #e6f7ff; /* Light blue hover effect */
+}
+
+thead {
+  background-color: #70a0d2;
+}
+
+@media (max-width: 600px) {
+  th,
+  td {
+    padding: 10px;
+  }
+  .table-controls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .table-controls input,
+  .table-controls select {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
